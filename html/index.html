@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .barra {
+            background-color: gray;
+            height: 100%;
+            text-decoration: none;
+            position: fixed;
+            margin-top: -18px;
+            color: #fff;
+            width: 400px;
+        }
+
+        #cor {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+        .container-fluid {
+            padding: 0 !important;
+        }
+
+        .container {
+            padding: 0 !important;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="row">
+        <div class="col-4">
+            <div class="barra" style="padding-top: 25px">
+                <h3>Gerador de Nomes BR</h3> <br>
+                <div class="container">
+                    <ul class="nav flex-column">
+                        <form>
+                            <h5>Nome</h5>
+                            <div class="col-auto my-1">
+                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option value="1910">1910</option>
+                                    <option value="1920">1920</option>
+                                    <option value="1930">1930</option>
+                                </select>
+                            </div><br>
+                            <h5>Sobrenome</h5>
+                            <div class="col-auto my-1">
+                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option value="1910">1910</option>
+                                    <option value="1920">1920</option>
+                                    <option value="1930">1930</option>
+                                </select>
+                            </div><br>
+                            <h5>Genero</h5>
+                            <div class="form-check ">
+
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" id="Masculino" value="opcao1">Masculino
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" id="Feminino" value="opcao2">Feminino
+                                </label>
+                            </div><br>
+                            <h5>Quantos nomes?</h5>
+                            <div class="col-auto my-1">
+                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div><br>
+                            <br><br>
+                            <button type="submit" class="btn btn-light" style="width:90;height:10">Gerar Nomes</button>
+                </div>
+                </form>
+                </ul>
+            </div>
+        </div>
+        <div class="col-8">
+            <div style='text-align:center'>
+                <p style="font-size: 54px">Nome Gerado</p>
+                <button type="submit">▶ Retomar piloto automático</button></P>
+            </div>
+        </div>
+    </div>
